@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20, 22, 24]
+        # The server runs on Node 20+, but Vitest 5 needs 22.12+ to run the tests.
+        node-version: [22, 24]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
