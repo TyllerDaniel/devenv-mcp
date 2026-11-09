@@ -1,0 +1,9 @@
+id = "demo-answer"
+title = "Fix the answer"
+category = "debugging"
+difficulty = "easy"
+image = "python"
+timeout_s = 10
+prompt = """
+answer.txt should contain 42.
+"""
